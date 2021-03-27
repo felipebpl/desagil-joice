@@ -8,11 +8,11 @@ public class CalculadoraCFC extends Calculadora{
 	private double peso;
 	private int quantidade;
 	
-	public CalculadoraCFC(double peso, double raio) {
+	public CalculadoraCFC() {
 		super("CFC");
 		this.avogadro = 6.023*Math.pow(10, 23);
-		this.raio = raio;
-		this.peso = peso;
+		this.raio = 0;
+		this.peso = 0;
 		this.quantidade = 4;
 	}
 	
@@ -20,7 +20,7 @@ public class CalculadoraCFC extends Calculadora{
 	public double calcula (double peso, double raio) {
 		double prevolume = 2*raio*Math.pow(10, -7)*(Math.pow(2, 0.5));
 		double volume = Math.pow(prevolume, 3);
-		double densidade = (this.quantidade*this.peso)/(this.avogadro*volume);
+		double densidade = (this.quantidade*peso)/(this.avogadro*volume);
 			
 		return densidade;
 	}

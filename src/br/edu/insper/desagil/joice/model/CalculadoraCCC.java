@@ -12,11 +12,11 @@ public class CalculadoraCCC extends Calculadora{
 	private double peso;
 	private int quantidade;
 
-	public CalculadoraCCC(double peso, double raio) {
+	public CalculadoraCCC() {
 		super("CCC");
 		this.avogadro = 6.023*Math.pow(10, 23);
-		this.raio = raio;
-		this.peso = peso;
+		this.raio = 0;
+		this.peso = 0;
 		this.quantidade = 2;
 	}
 
