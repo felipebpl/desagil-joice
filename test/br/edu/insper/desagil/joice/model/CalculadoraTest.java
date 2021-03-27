@@ -37,3 +37,6 @@ class CalculadoraTest {
 		double densidadeDuasCasas = Math.round(densidade*100)/100.00;
 		assertEquals(10.60,densidadeDuasCasas);
 	}
+	
+}
+	
