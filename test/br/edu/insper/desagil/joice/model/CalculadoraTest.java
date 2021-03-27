@@ -38,5 +38,29 @@ class CalculadoraTest {
 		assertEquals(10.60,densidadeDuasCasas);
 	}
 	
+	@Test
+	void testeNiobio() {
+		CalculadoraCCC Niobio = new CalculadoraCCC(92.91, 0.143);
+		double densidade = Niobio.calcula(Niobio.getPeso(), Niobio.getRaio());
+		double densidadeDuasCasas = Math.round(densidade*100)/100.00;
+		assertEquals(8.57,densidadeDuasCasas);
+	}
+
+	@Test
+	void testeTungstenio() {
+		CalculadoraCCC Tungstenio = new CalculadoraCCC(183.84, 0.137);
+		double densidade = Tungstenio.calcula(Tungstenio.getPeso(), Tungstenio.getRaio());
+		double densidadeDuasCasas = Math.round(densidade*100)/100.00;
+		assertEquals(19.28,densidadeDuasCasas);
+	}
+
+	@Test
+	void testeLitio() {
+		CalculadoraCCC Litio = new CalculadoraCCC(6.94, 0.152);
+		double densidade = Litio.calcula(Litio.getPeso(), Litio.getRaio());
+		double densidadeDuasCasas = Math.round(densidade*100)/100.00;
+		assertEquals(0.53,densidadeDuasCasas);
+	}
+	
 }
 	
